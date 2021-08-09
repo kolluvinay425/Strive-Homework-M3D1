@@ -136,4 +136,29 @@ const longestString = (arr) => {
   return result;
 };
 
-console.log(longestString(["kollu", "26", "vinay"]));
+//console.log(longestString(["kollu", "26", "vinay"]));
+
+//13 Create a function to find the index of the greatest element of a given array of integers)
+function largestArrNum(arr) {
+  let max = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) max = arr[i];
+  }
+
+  console.log(max);
+}
+
+let arrr = [10, 324, 45, 90, 9808];
+//largestArrNum(arrr);
+
+//14) Create a function to get the largest even number from an array of integers.
+maxEven = (arra) => {
+  arra.sort((x, y) => y - x);
+
+  for (let i = 0; i < arra.length; i++) {
+    if (arra[i] % 2 == 0) return arra[i];
+  }
+};
+
+//console.log(maxEven([20, 40, 200]));
