@@ -162,3 +162,21 @@ maxEven = (arra) => {
 };
 
 //console.log(maxEven([20, 40, 200]));
+//16)Create a function to check from two given integers, whether one is positive and another one is negative.
+
+const positiveNegative = (a, b) => {
+  if (a < 0) {
+    if (a) {
+      console.log(a, "is" + "negative number");
+    } else {
+      console.log(a, "is" + "positive number");
+    }
+  } else if (b > 0) {
+    if (b) {
+      console.log(b, "is" + "positive number");
+    } else {
+      console.log(b, "is" + "negative number");
+    }
+  }
+};
+positiveNegative(-1, 5);
