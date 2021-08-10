@@ -109,34 +109,33 @@ list = [4, 5, 6];
 //9)  Create a function to test whether an array of integers of length 2 contains 1 or a 3.
 
 const arrayOfIntigers = (arr) => {
-  if (arr.length == 2) {
-    if (arr.indexOf(1) !== -1 || arr.indexOf(3) !== -1) {
-      console.log(true);
-    } else {
-      console.log(false);
-    }
-  }
-};
-//arrayOfIntigers([4, 3]);
-//10) Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
-
-const arrDoesNotContains = (arr) => {
-  if (arr.indexOf(1) == -1 || arr.indexOf(3) == -1) {
+  if (arr.indexOf(1) !== -1 || arr.indexOf(3) !== -1) {
     console.log(true);
   } else {
     console.log(false);
+  }
+};
+//arrayOfIntigers([1]);
+//10) Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
+
+const arrDoesNotContains = (arr) => {
+  if (arr.indexOf(1) !== -1 || arr.indexOf(3) !== -1) {
+    console.log(false);
+  } else {
+    console.log(true);
   }
 };
 //arrDoesNotContains([1, 5]);
 //11) Create a function to find the longest string from a given array of strings.
 const longestString = (arr) => {
   let max = arr[0].length;
+  console.log(max);
   arr.map((v) => (max = Math.max(max, v.length)));
   result = arr.filter((v) => v.length == max);
-  return result;
+  console.log(result);
 };
 
-//console.log(longestString(["kollu", "26", "vinay"]));
+console.log(longestString(["kollu", "26", "vinay"]));
 
 //13 Create a function to find the index of the greatest element of a given array of integers)
 function largestArrNum(arr) {
@@ -179,4 +178,4 @@ const positiveNegative = (a, b) => {
     }
   }
 };
-positiveNegative(-1, 5);
+//positiveNegative(-1, 5);
